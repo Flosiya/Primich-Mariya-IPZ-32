@@ -24,7 +24,7 @@ span {
     color: #2196F3;
     font-weight: 700;
     size: 26;
-    line-height: normal;
+    line-height: 1.17;
     letter-spacing: 0.78px;
     font-style: normal;
 
@@ -34,7 +34,7 @@ span {
     font-family: 'Raleway', sans-serif;
     font-weight: 700;
     size: 26;
-    line-height: normal;
+    line-height: 1.17;
     letter-spacing: 0.78px;
     font-style: normal;
 
@@ -219,5 +219,28 @@ footer {
     line-height: 16px;
     letter-spacing: 0.03em;
     text-align: left;
-    color:#FFFFFF;
+    color: #FFFFFF;
+}
+
+/* portfolio part */
+
+.buttons {
+    box-sizing: border-box;
+    background-color: #F5F4FA;
+    color: #212121;
+    text-align: center;
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 26px;
+    /* 162.5% */
+    letter-spacing: 0.48px;
+}
+
+.menu-button .buttons:hover,
+.buttons:active,
+.buttons:focus {
+    background: #2196F3;
+    color: #FFF;
 }
