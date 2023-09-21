@@ -1,0 +1,57 @@
+<style>@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap');
+
+</style>html {
+    box-sizing: border-box;
+    font-size: 24;
+}
+
+.body {
+    color: var(--primary-color);
+    font-family: 'Roboto', sans-serif;
+    font-size: 700;
+    size: 14;
+
+}
+
+li {
+    list-style-type: none;
+}
+
+
+
+/* HEADER */
+
+.web-studio {
+    color: black;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    size: 26;
+    line-height: 35.96px;
+    letter-spacing: 0.78px;
+}
+
+span {
+    font-family: 'Raleway', sans-serif;
+    color: #2196F3;
+    font-weight: 400;
+    size: 26;
+    line-height: 30.52px;
+    letter-spacing: 0.78px;
+}
+a {
+    color: black;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    size: 14;
+    line-height: 16.41px;
+}
+.menu{
+    color:black
+}
+
+.menu .link:hover,
+.link:active,
+.link:focus {
+    color: #2196F3;
+}
