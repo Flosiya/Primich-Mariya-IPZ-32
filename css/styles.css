@@ -82,21 +82,25 @@ a {
 .big-text {
     box-sizing: border-box;
     width: 1600px;
-    height: 600;
+    height: 207px;
     flex-shrink: 0;
     background: #2F303A;
 }
 
 h1 {
     color: #FFF;
-    text-align: center;
+    width: 696px;
+    height: 120px;
+    top: 280px;
+    left: 452px;
     font-family: Roboto;
     font-size: 44px;
-    font-style: normal;
     font-weight: 900;
     line-height: 60px;
-    letter-spacing: 2.64px;
-    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    text-align: center;
+
+
 }
 
 button {
@@ -121,23 +125,69 @@ button {
     color: #212121;
     font-family: Roboto;
     font-size: 14px;
-    font-style: normal;
     font-weight: 700;
-    line-height: normal;
-    letter-spacing: 0.42px;
-    text-transform: uppercase;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    text-align: left;
+
 }
 
 .feature-post {
-    width: 270px;
-    height: 72px;
-    flex-shrink: 0;
     color: #757575;
     font-family: Roboto;
     font-size: 14px;
-    font-style: normal;
     font-weight: 400;
     line-height: 24px;
-    /* 171.429% */
-    letter-spacing: 0.42px;
+    letter-spacing: 0.03em;
+    text-align: left;
+
+}
+
+.employment-header {
+    color: #212121;
+    text-align: center;
+    font-family: Roboto;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 1.08px;
+}
+
+.team-header {
+    font-family: Roboto;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 42px;
+    letter-spacing: 0.03em;
+    text-align: center;
+
+}
+
+.card-person {
+    box-sizing: border-box;
+    width: 270px;
+    height: 368px;
+    flex-shrink: 0;
+}
+
+.person-info {
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 19px;
+    letter-spacing: 0.03em;
+    text-align: center;
+
+}
+
+.person-profession {
+    color: #757575;
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19px;
+    letter-spacing: 0.03em;
+    text-align: center;
+
 }
