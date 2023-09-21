@@ -103,7 +103,7 @@ h1 {
 
 }
 
-button {
+.button-center {
     box-sizing: border-box;
     width: 200px;
     height: 50px;
@@ -190,4 +190,34 @@ button {
     letter-spacing: 0.03em;
     text-align: center;
 
+}
+
+/* footer */
+
+footer {
+    box-sizing: border-box;
+    width: 1600px;
+    top: 2094px;
+    flex-shrink: 0;
+    background: #2F303A;
+}
+
+.web-studio-footer {
+    color: #FFF;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    size: 26;
+    line-height: normal;
+    letter-spacing: 0.78px;
+    font-style: normal;
+}
+
+.address-text {
+    font-family: Roboto;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    text-align: left;
+    color:#FFFFFF;
 }
