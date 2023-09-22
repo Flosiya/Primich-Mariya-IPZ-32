@@ -1,6 +1,5 @@
-<style>@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap');
 
-</style>html {
+html {
     box-sizing: border-box;
     font-size: 24;
 }
@@ -27,7 +26,6 @@ span {
     line-height: 1.17;
     letter-spacing: 0.78px;
     font-style: normal;
-
 }
 
 .web-studio {
@@ -37,7 +35,6 @@ span {
     line-height: 1.17;
     letter-spacing: 0.78px;
     font-style: normal;
-
 }
 
 a {
@@ -99,8 +96,6 @@ h1 {
     line-height: 60px;
     letter-spacing: 0.06em;
     text-align: center;
-
-
 }
 
 .button-center {
@@ -117,7 +112,6 @@ h1 {
     font-weight: 700;
     line-height: 30px;
     letter-spacing: 0.96px;
-
 }
 
 .feature-main {
@@ -129,7 +123,6 @@ h1 {
     line-height: 16px;
     letter-spacing: 0.03em;
     text-align: left;
-
 }
 
 .feature-post {
@@ -140,7 +133,6 @@ h1 {
     line-height: 24px;
     letter-spacing: 0.03em;
     text-align: left;
-
 }
 
 .employment-header {
@@ -161,7 +153,6 @@ h1 {
     line-height: 42px;
     letter-spacing: 0.03em;
     text-align: center;
-
 }
 
 .card-person {
@@ -178,7 +169,6 @@ h1 {
     line-height: 19px;
     letter-spacing: 0.03em;
     text-align: center;
-
 }
 
 .person-profession {
@@ -189,7 +179,6 @@ h1 {
     line-height: 19px;
     letter-spacing: 0.03em;
     text-align: center;
-
 }
 
 /* footer */
@@ -234,13 +223,31 @@ footer {
     font-style: normal;
     font-weight: 500;
     line-height: 26px;
-    /* 162.5% */
     letter-spacing: 0.48px;
 }
 
 .menu-button .buttons:hover,
 .buttons:active,
 .buttons:focus {
-    background: #2196F3;
+    background-color: #2196F3;
     color: #FFF;
+}
+
+.tab-name {
+    font-family: Roboto;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 36px;
+    letter-spacing: 0.06em;
+    text-align: left;
+    color: #212121;
+}
+
+.tab-type {
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 30px;
+    letter-spacing: 0.03em;
+    color: #757575;
 }
