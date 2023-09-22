@@ -1,14 +1,20 @@
+:root {
+    font-family: 'Roboto';
+    font-style: normal;
+    line-height: normal;
+    color: black;
+}
 
 html {
     box-sizing: border-box;
-    font-size: 24;
+    font-size: 14px;
 }
 
 .body {
     color: var(--primary-color);
     font-family: 'Roboto', sans-serif;
-    font-size: 400;
-    size: 14;
+    font-size: 400px;
+    size: 14px;
 
 }
 
@@ -22,33 +28,31 @@ span {
     font-family: 'Raleway', sans-serif;
     color: #2196F3;
     font-weight: 700;
-    size: 26;
-    line-height: 1.17;
+    font-size: 26px;
     letter-spacing: 0.78px;
-    font-style: normal;
 }
 
 .web-studio {
     font-family: 'Raleway', sans-serif;
     font-weight: 700;
-    size: 26;
-    line-height: 1.17;
+    font-size: 26px;
     letter-spacing: 0.78px;
-    font-style: normal;
+
 }
 
 a {
     color: var(--primary-color);
     text-decoration: none;
+    transition:
+        margin-right 4s,
+        color 1s;
 }
 
 .menu {
     color: var(--primary-color);
-    font-family: 'Roboto', sans-serif;
+    font-family: Roboto;
+    font-size: 14px;
     font-weight: 500;
-    size: 14;
-    line-height: normal;
-    font-style: normal;
     letter-spacing: 0.28px;
 }
 
@@ -60,11 +64,9 @@ a {
 
 .contact-info {
     color: #757575;
-    font-family: 'Roboto', sans-serif;
+    font-family: Roboto;
+    font-size: 14px;
     font-weight: 500;
-    size: 14;
-    line-height: normal;
-    font-style: normal;
     letter-spacing: 0.28px;
 }
 
@@ -80,7 +82,6 @@ a {
     box-sizing: border-box;
     width: 1600px;
     height: 207px;
-    flex-shrink: 0;
     background: #2F303A;
 }
 
@@ -88,28 +89,39 @@ h1 {
     color: #FFF;
     width: 696px;
     height: 120px;
-    top: 280px;
-    left: 452px;
     font-family: Roboto;
     font-size: 44px;
     font-weight: 900;
     line-height: 60px;
-    letter-spacing: 0.06em;
     text-align: center;
 }
 
 .button-center {
     box-sizing: border-box;
+    cursor: pointer;
     width: 200px;
     height: 50px;
-    flex-shrink: 0;
     border-radius: 4px;
     background: #2196F3;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
     color: #FFF;
     font-family: Roboto;
     font-size: 16px;
-    font-weight: 700;
+    line-height: 30px;
+    letter-spacing: 0.96px;
+}
+
+.button-center:active {
+    box-sizing: border-box;
+    cursor: pointer;
+    width: 200px;
+    height: 50px;
+    border-radius: 4px;
+    background: #188CE8;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+    color: #FFF;
+    font-family: Roboto;
+    font-size: 16px;
     line-height: 30px;
     letter-spacing: 0.96px;
 }
@@ -140,9 +152,7 @@ h1 {
     text-align: center;
     font-family: Roboto;
     font-size: 36px;
-    font-style: normal;
     font-weight: 700;
-    line-height: normal;
     letter-spacing: 1.08px;
 }
 
@@ -186,8 +196,6 @@ h1 {
 footer {
     box-sizing: border-box;
     width: 1600px;
-    top: 2094px;
-    flex-shrink: 0;
     background: #2F303A;
 }
 
@@ -195,20 +203,30 @@ footer {
     color: #FFF;
     font-family: 'Raleway', sans-serif;
     font-weight: 700;
-    size: 26;
-    line-height: normal;
+    font-size: 26px;
     letter-spacing: 0.78px;
-    font-style: normal;
 }
 
 .address-text {
+    color: #FFF;
     font-family: Roboto;
     font-size: 14px;
     font-weight: 400;
     line-height: 16px;
-    letter-spacing: 0.03em;
-    text-align: left;
-    color: #FFFFFF;
+    letter-spacing: 0.42px;
+}
+
+.footer-contacts {
+    color: rgba(255, 255, 255, 0.60);
+    font-family: Roboto;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 16px;
+    letter-spacing: 0.42px;
+}
+
+.footer-contact-info:hover {
+    cursor: pointer;
 }
 
 /* portfolio part */
@@ -220,7 +238,6 @@ footer {
     text-align: center;
     font-family: Roboto;
     font-size: 16px;
-    font-style: normal;
     font-weight: 500;
     line-height: 26px;
     letter-spacing: 0.48px;
@@ -248,6 +265,5 @@ footer {
     font-size: 16px;
     font-weight: 400;
     line-height: 30px;
-    letter-spacing: 0.03em;
     color: #757575;
 }
