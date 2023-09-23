@@ -1,8 +1,11 @@
 :root {
-    font-family: 'Roboto';
-    font-style: normal;
-    line-height: normal;
-    color: black;
+    --primary-color: #212121;
+    --secondary-color: #757575;
+    --background-primary-color: #FFFFFF;
+    --background-secondary-color: #2F303A;
+    --accent-color: #2196F3;
+    --transperent-color: #FFFFFF99;
+    --inactive-filter-color: #F5F4FA;
 }
 
 html {
@@ -11,8 +14,9 @@ html {
 }
 
 .body {
-    color: var(--primary-color);
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto';
+    font-style: normal;
+    line-height: normal;
     font-size: 400px;
     size: 14px;
 
@@ -26,7 +30,7 @@ li {
 
 span {
     font-family: 'Raleway', sans-serif;
-    color: #2196F3;
+    color:var(--accent-color);
     font-weight: 700;
     font-size: 26px;
     letter-spacing: 0.78px;
@@ -57,11 +61,11 @@ a {
 .menu .link:hover,
 .link:active,
 .link:focus {
-    color: #2196F3;
+    color: var(--accent-color);
 }
 
 .contact-info {
-    color: #757575;
+    color: var(--secondary-color);
     font-family: Roboto;
     font-size: 14px;
     font-weight: 500;
@@ -72,7 +76,11 @@ a {
 .contact-info .contacts:hover,
 .contacts:active,
 .contacts.link:focus {
-    color: #2196F3;
+    color: var(--accent-color);
+}
+
+.link-active{
+    color:var(--accent-color)
 }
 
 /*main-body*/
@@ -81,11 +89,11 @@ a {
     box-sizing: border-box;
     width: 1600px;
     height: 207px;
-    background: #2F303A;
+    background: var(--background-secondary-color);
 }
 
 h1 {
-    color: #FFF;
+    color: var(--background-primary-color);
     height: 120px;
     font-family: Roboto;
     font-size: 44px;
@@ -100,9 +108,9 @@ h1 {
     width: 200px;
     height: 50px;
     border-radius: 4px;
-    background: #2196F3;
+    background: var(--accent-color);
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
-    color: #FFF;
+    color: var(--background-primary-color);
     font-family: Roboto;
     font-size: 16px;
     line-height: 30px;
@@ -118,7 +126,7 @@ h1 {
     border-radius: 4px;
     background: #188CE8;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
-    color: #FFF;
+    color: var(--background-primary-color);
     font-family: Roboto;
     font-size: 16px;
     line-height: 30px;
@@ -127,7 +135,7 @@ h1 {
 
 .feature-main {
     width: 270px;
-    color: #212121;
+    color: var(--primary-color);
     font-family: Roboto;
     font-size: 14px;
     font-weight: 700;
@@ -137,7 +145,7 @@ h1 {
 }
 
 .feature-post {
-    color: #757575;
+    color: var(--secondary-color);
     font-family: Roboto;
     font-size: 14px;
     font-weight: 400;
@@ -147,7 +155,7 @@ h1 {
 }
 
 .employment-header {
-    color: #212121;
+    color: var(--primary-color);
     text-align: center;
     font-family: Roboto;
     font-size: 36px;
@@ -156,6 +164,7 @@ h1 {
 }
 
 .team-header {
+    color: var(--primary-color);
     font-family: Roboto;
     font-size: 36px;
     font-weight: 700;
@@ -181,7 +190,7 @@ h1 {
 }
 
 .person-profession {
-    color: #757575;
+    color: var(--secondary-color);
     font-family: Roboto;
     font-size: 16px;
     font-weight: 400;
@@ -195,11 +204,11 @@ h1 {
 footer {
     box-sizing: border-box;
     width: 1600px;
-    background: #2F303A;
+    background: var(--background-secondary-color);
 }
 
 .web-studio-footer {
-    color: #FFF;
+    color: var(--background-primary-color);
     font-family: 'Raleway', sans-serif;
     font-weight: 700;
     font-size: 26px;
@@ -207,7 +216,7 @@ footer {
 }
 
 .address-text {
-    color: #FFF;
+    color: var(--background-primary-color);
     font-family: Roboto;
     font-size: 14px;
     font-style: normal;
@@ -234,8 +243,8 @@ footer {
 
 .buttons {
     box-sizing: border-box;
-    background-color: #F5F4FA;
-    color: #212121;
+    background-color:var(--inactive-filter-color);
+    color: var(--primary-color);
     text-align: center;
     font-family: Roboto;
     font-size: 16px;
@@ -248,8 +257,8 @@ footer {
 .menu-button .buttons:hover,
 .buttons:active,
 .buttons:focus {
-    background-color: #2196F3;
-    color: #FFF;
+    background-color: var(--accent-color);
+    color: var(--background-primary-color);
 }
 
 .tab-name {
@@ -259,7 +268,7 @@ footer {
     line-height: 36px;
     letter-spacing: 0.06em;
     text-align: left;
-    color: #212121;
+    color: var(--primary-color);
 }
 
 .tab-type {
@@ -267,5 +276,5 @@ footer {
     font-size: 16px;
     font-weight: 400;
     line-height: 30px;
-    color: #757575;
+    color:var(--secondary-color);
 }
