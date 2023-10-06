@@ -181,7 +181,7 @@ a {
 }
 
 .benefit {
-    padding: 95px 0px;
+    padding: 94px 0px;
 }
 
 .benefit-list {
@@ -217,7 +217,7 @@ a {
 }
 
 .work {
-    margin-bottom: 95px;
+    padding-bottom: 94px;
 }
 
 .work-list {
@@ -249,7 +249,7 @@ a {
     letter-spacing: 0.03em;
     text-align: center;
 
-    padding-top: 95px;
+    padding-top: 94px;
 }
 
 .team-list {
@@ -265,16 +265,16 @@ a {
     border-radius: 0px 0px 4px 4px;
     background: #FFF;
     margin-top: 50px;
-    margin-bottom: 95px;
+    margin-bottom: 94px;
 
     /* material shadow v1 */
     box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.20),
-    0px 1px 1px 0px rgba(0, 0, 0, 0.14),
-    0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+        0px 1px 1px 0px rgba(0, 0, 0, 0.14),
+        0px 1px 3px 0px rgba(0, 0, 0, 0.12);
 
 }
 
-.team-img{
+.team-img {
     padding-bottom: 30px;
 }
 
@@ -285,7 +285,7 @@ a {
     letter-spacing: 0.03em;
 
     display: flex;
-    justify-content:center;
+    justify-content: center;
     margin: auto;
     margin-bottom: 10px;
 }
@@ -298,7 +298,7 @@ a {
     letter-spacing: 0.03em;
 
     display: flex;
-    justify-content:center;
+    justify-content: center;
     margin: auto;
     margin-bottom: 30px;
 
@@ -323,7 +323,7 @@ footer {
     padding-top: 60px;
 }
 
-.address{
+.address {
     display: block;
     flex-direction: row;
     justify-content: flex-start;
@@ -337,15 +337,16 @@ footer {
     line-height: 16px;
     letter-spacing: 0.42px;
 
-    margin:28px 0px 0px 0px;
+    margin: 28px 0px 0px 0px;
 }
-.footer-list{
+
+.footer-list {
     flex-direction: row;
     justify-content: flex-start;
     padding: 0;
 }
 
-.footer-item{
+.footer-item {
     display: flex;
     margin: 12px 0px;
 }
@@ -365,7 +366,29 @@ footer {
 
 /* portfolio part */
 
-.buttons {
+.portfolio {
+    padding: 94px 0px;
+}
+
+.portfolio-item {
+    display: flex;
+    justify-content: center;
+
+
+}
+
+.portfolio-list {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+
+    padding: 56px;
+    margin: 0;
+}
+
+.portfolio-buttons {
     box-sizing: border-box;
     cursor: pointer;
     background-color: var(--inactive-filter-color);
@@ -377,17 +400,26 @@ footer {
     line-height: normal;
     letter-spacing: 0.48px;
     transition: 300ms ease-in;
+
 }
 
-.menu-button .buttons:hover,
-.buttons:active,
-.buttons:focus {
+.buttons-active {
+
+    background: #2196F3;
+    transition: 300ms ease-in;
+
+    /* shadow-middle */
+    box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12), 0px 1px 2px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.10);
+}
+
+.portfolio-list .portfolio-buttons:hover,
+.portfolio-buttons:focus {
     background-color: var(--accent-color);
     color: var(--background-primary-color);
     cursor: pointer;
 }
 
-.tab-name {
+.card-title {
     font-size: 18px;
     font-weight: 700;
     line-height: normal;
@@ -396,9 +428,40 @@ footer {
     color: var(--primary-color);
 }
 
-.tab-type {
+.card-text {
     font-size: 16px;
     font-weight: 400;
     line-height: normal;
     color: var(--secondary-color);
+}
+
+.card-list {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+    margin: 0;
+    gap: 30px;
+}
+
+.card-link {
+    border: 1px solid #EEE;
+    background: #FFF;
+    width: calc(100% / 3 - 20px)   
+}
+
+.card-img{
+    padding-bottom:20px ;
+}
+.card-title{
+    display: flex;
+    margin: 0;
+    padding: 0px 24px;
+    justify-content: flex-start;
+}
+
+.card-text{
+    display: flex;
+    margin: 0;
+    padding: 4px 24px 20px 24px;
+    justify-content: flex-start;
 }
