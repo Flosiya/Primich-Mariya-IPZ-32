@@ -46,8 +46,10 @@ a {
 
 .container {
     max-width: 1200px;
-    padding: 0;
-    margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .header-container {
@@ -59,7 +61,7 @@ a {
 .container-menu {
     display: flex;
     width: 100%;
-    justify-content:space-between;
+    justify-content: space-between;
 }
 
 /* HEADER */
@@ -89,7 +91,7 @@ a {
     letter-spacing: 0.28px;
 
     display: flex;
-    gap:50px
+    gap: 50px
 }
 
 .menu-list .menu-item:hover,
@@ -125,12 +127,22 @@ a {
 
 /*main-body*/
 
-.big-text {
-    box-sizing: border-box;
-    background: var(--background-secondary-color);
+.hero-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
 }
 
-h1 {
+.hero {
+    box-sizing: border-box;
+    background: var(--background-secondary-color);
+    height: 600px;
+}
+
+.title {
     color: var(--background-primary-color);
     font-size: 44px;
     font-weight: 900;
@@ -139,7 +151,7 @@ h1 {
     text-transform: uppercase;
 }
 
-.button-center {
+.hero-button {
     box-sizing: border-box;
     cursor: pointer;
     border-radius: 4px;
@@ -150,9 +162,12 @@ h1 {
     line-height: normal;
     letter-spacing: 0.96px;
 
+    padding: 10px 24px;
+    margin: 30px;
+
 }
 
-.button-center:active {
+.hero-button:active {
     box-sizing: border-box;
     cursor: pointer;
     border-radius: 4px;
@@ -165,58 +180,127 @@ h1 {
     transition: 300ms ease-in;
 }
 
-.feature-main {
+.benefit {
+    padding: 95px 0px;
+}
+
+.benefit-list {
+    display: flex;
+    gap: 30px;
+}
+
+.benefit-item {
+    justify-content: space-around;
+    width: 100%;
+
+}
+
+.benefit-title {
     color: var(--primary-color);
     font-weight: 700;
     line-height: normal;
     letter-spacing: 0.03em;
     text-align: left;
     text-transform: uppercase;
+
+    margin-bottom: 10px;
 }
 
-.feature-post {
+.benefit-text {
     color: var(--secondary-color);
     font-weight: 400;
     line-height: normal;
     letter-spacing: 0.03em;
     text-align: left;
+
+
 }
 
-.employment-header {
+.work {
+    margin-bottom: 95px;
+}
+
+.work-list {
+    display: flex;
+    width: 100%;
+    gap: 30px;
+}
+
+.work-title {
     color: var(--primary-color);
     text-align: center;
     font-size: 36px;
     font-weight: 700;
     letter-spacing: 1.08px;
+
+    padding-bottom: 50px;
 }
 
-.team-header {
+.team {
+    background: var(--inactive-filter-color);
+    width: 100%;
+}
+
+.team-title {
     color: var(--primary-color);
     font-size: 36px;
     font-weight: 700;
     line-height: normal;
     letter-spacing: 0.03em;
     text-align: center;
+
+    padding-top: 95px;
 }
 
-.card-person {
+.team-list {
+    display: flex;
+    width: 100%;
+    gap: 30px;
+    margin: 0px;
+    padding: 0px;
+}
+
+.team-item {
     box-sizing: border-box;
+    border-radius: 0px 0px 4px 4px;
+    background: #FFF;
+    margin-top: 50px;
+    margin-bottom: 95px;
+
+    /* material shadow v1 */
+    box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.20),
+    0px 1px 1px 0px rgba(0, 0, 0, 0.14),
+    0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+
 }
 
-.person-info {
+.team-img{
+    padding-bottom: 30px;
+}
+
+.team-name {
     font-size: 16px;
     font-weight: 500;
     line-height: normal;
     letter-spacing: 0.03em;
 
+    display: flex;
+    justify-content:center;
+    margin: auto;
+    margin-bottom: 10px;
 }
 
-.person-profession {
+.team-text {
     color: var(--secondary-color);
     font-size: 16px;
     font-weight: 400;
     line-height: normal;
     letter-spacing: 0.03em;
+
+    display: flex;
+    justify-content:center;
+    margin: auto;
+    margin-bottom: 30px;
 
 }
 
@@ -225,14 +309,25 @@ h1 {
 footer {
     box-sizing: border-box;
     background: var(--background-secondary-color);
+    height: 251px;
 }
 
-.web-studio-footer {
+.webstudio-footer {
     color: var(--background-primary-color);
     font-family: 'Raleway', sans-serif;
     font-weight: 700;
     font-size: 26px;
     letter-spacing: 0.78px;
+
+    display: flex;
+    padding-top: 60px;
+}
+
+.address{
+    display: block;
+    flex-direction: row;
+    justify-content: flex-start;
+
 }
 
 .address-text {
@@ -241,6 +336,18 @@ footer {
     font-weight: 400;
     line-height: 16px;
     letter-spacing: 0.42px;
+
+    margin:28px 0px 0px 0px;
+}
+.footer-list{
+    flex-direction: row;
+    justify-content: flex-start;
+    padding: 0;
+}
+
+.footer-item{
+    display: flex;
+    margin: 12px 0px;
 }
 
 .footer-contacts {
@@ -249,6 +356,7 @@ footer {
     font-weight: 400;
     line-height: normal;
     letter-spacing: 0.42px;
+
 }
 
 .footer-contacts:hover {
