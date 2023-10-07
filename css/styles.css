@@ -23,9 +23,10 @@ body {
 }
 
 body,
-h1, h2,
+h1, h2, h3,
 p,
-ul {
+ul,
+li {
     margin: 0;
     padding: 0;
 }
@@ -37,6 +38,10 @@ li {
 a {
     text-decoration: none;
     color: #2F303A;
+}
+
+img{
+    display: block;
 }
 
 /* CONTAINER */
@@ -157,6 +162,7 @@ a {
     line-height: normal;
     text-align: center;
     text-transform: uppercase;
+    max-width: 696px;
 }
 
 .hero-button {
@@ -266,6 +272,7 @@ a {
     box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.20),
         0px 1px 1px 0px rgba(0, 0, 0, 0.14),
         0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+        padding-bottom: 30px;
 
 }
 
@@ -276,13 +283,11 @@ a {
 .team-name {
     font-size: 16px;
     font-weight: 500;
-    line-height: normal;
     letter-spacing: 0.03em;
 
-    display: flex;
-    justify-content: center;
-    margin: auto;
+    text-align: center;
     margin-bottom: 10px;
+
 }
 
 .team-text {
@@ -292,10 +297,7 @@ a {
     line-height: normal;
     letter-spacing: 0.03em;
 
-    display: flex;
-    justify-content: center;
-    margin: auto;
-    margin-bottom: 30px;
+    text-align: center;
 
 }
 
@@ -366,8 +368,6 @@ footer {
 .portfolio-item {
     display: flex;
     justify-content: center;
-
-
 }
 
 .portfolio-list {
@@ -377,8 +377,7 @@ footer {
     align-items: center;
     gap: 8px;
 
-    padding: 56px;
-    margin: 0;
+    margin-bottom: 50px;
 }
 
 .portfolio-buttons {
@@ -389,14 +388,17 @@ footer {
     font-family: Roboto;
     font-size: 16px;
     font-weight: 500;
-    line-height: normal;
     letter-spacing: 0.48px;
     transition: 300ms ease-in;
+    border: none;
+
+    padding: 6px 22px;
+    border-radius: 4px;
 
 }
 
 .buttons-active {
-
+    color: var(--background-primary-color);
     background: #2196F3;
     transition: 300ms ease-in;
 
@@ -418,6 +420,8 @@ footer {
     letter-spacing: 0.06em;
     text-align: left;
     color: var(--primary-color);
+
+    margin-bottom: 4px;
 }
 
 .card-text {
@@ -435,26 +439,28 @@ footer {
     gap: 30px;
 }
 
+.card-item {
+    width: calc((100% - 60px) / 3);
+}
+
 .card-link {
     border: 1px solid #EEE;
     background: #FFF;
-    width: calc(100% / 3 - 20px)
+    
 }
 
-.card-img {
-    padding-bottom: 20px;
+.card-desk{
+    padding: 20px 24px;
 }
 
 .card-title {
     display: flex;
-    margin: 0;
-    padding: 0px 24px;
     justify-content: flex-start;
 }
 
 .card-text {
     display: flex;
-    margin: 0;
-    padding: 4px 24px 20px 24px;
+    
     justify-content: flex-start;
 }
+
