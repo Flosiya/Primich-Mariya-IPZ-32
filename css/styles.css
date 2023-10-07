@@ -9,15 +9,9 @@
 }
 
 html {
-    box-sizing: border-box;
     font-size: 14px;
 }
 
-*,
-*::before,
-*::after {
-    box-sizing: border-box;
-}
 
 body {
     font-family: 'Roboto';
@@ -26,6 +20,14 @@ body {
     font-size: 14px;
     size: 14px;
 
+}
+
+body,
+h1, h2,
+p,
+ul {
+    margin: 0;
+    padding: 0;
 }
 
 li {
@@ -40,8 +42,8 @@ a {
 /* CONTAINER */
 
 .header {
-    border: 1px solid #ececec;
-    height: 60px;
+    border-bottom: 1px solid #ececec;
+    height: 80px;
 }
 
 .container {
@@ -101,9 +103,16 @@ a {
     transition: 300ms ease-in;
 }
 
+.menu-item,
+.contact-item {
+    padding: 32px 0px;
+    display: inline-block;
+}
+
 .contact-list {
     display: flex;
     gap: 40px;
+    margin-left: auto;
 }
 
 .contact-item {
@@ -137,7 +146,6 @@ a {
 }
 
 .hero {
-    box-sizing: border-box;
     background: var(--background-secondary-color);
     height: 600px;
 }
@@ -152,32 +160,24 @@ a {
 }
 
 .hero-button {
-    box-sizing: border-box;
     cursor: pointer;
     border-radius: 4px;
     background: var(--accent-color);
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
     color: var(--background-primary-color);
     font-size: 16px;
-    line-height: normal;
+    line-height: 1.8;
     letter-spacing: 0.96px;
 
     padding: 10px 24px;
-    margin: 30px;
-
+    margin-top: 30px;
+    border: none;
+    transition: 300ms ease-in;
 }
 
-.hero-button:active {
-    box-sizing: border-box;
-    cursor: pointer;
-    border-radius: 4px;
+.hero-button:hover,
+.hero-button:focus {
     background: #188CE8;
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
-    color: var(--background-primary-color);
-    font-size: 16px;
-    line-height: normal;
-    letter-spacing: 0.96px;
-    transition: 300ms ease-in;
 }
 
 .benefit {
@@ -190,7 +190,6 @@ a {
 }
 
 .benefit-item {
-    justify-content: space-around;
     width: 100%;
 
 }
@@ -233,12 +232,13 @@ a {
     font-weight: 700;
     letter-spacing: 1.08px;
 
-    padding-bottom: 50px;
+    margin-bottom: 50px;
+
 }
 
 .team {
     background: var(--inactive-filter-color);
-    width: 100%;
+    padding: 94px 0px;
 }
 
 .team-title {
@@ -249,23 +249,18 @@ a {
     letter-spacing: 0.03em;
     text-align: center;
 
-    padding-top: 94px;
+    margin-bottom: 50px;
 }
 
 .team-list {
     display: flex;
     width: 100%;
     gap: 30px;
-    margin: 0px;
-    padding: 0px;
 }
 
 .team-item {
-    box-sizing: border-box;
     border-radius: 0px 0px 4px 4px;
     background: #FFF;
-    margin-top: 50px;
-    margin-bottom: 94px;
 
     /* material shadow v1 */
     box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.20),
@@ -275,7 +270,7 @@ a {
 }
 
 .team-img {
-    padding-bottom: 30px;
+    margin-bottom: 30px;
 }
 
 .team-name {
@@ -307,9 +302,8 @@ a {
 /* footer */
 
 footer {
-    box-sizing: border-box;
     background: var(--background-secondary-color);
-    height: 251px;
+    padding: 60px 0px;
 }
 
 .webstudio-footer {
@@ -320,7 +314,6 @@ footer {
     letter-spacing: 0.78px;
 
     display: flex;
-    padding-top: 60px;
 }
 
 .address {
@@ -347,9 +340,9 @@ footer {
 }
 
 .footer-item {
-    display: flex;
-    margin: 12px 0px;
+    margin-top: 12px;
 }
+
 
 .footer-contacts {
     color: rgba(255, 255, 255, 0.60);
@@ -389,7 +382,6 @@ footer {
 }
 
 .portfolio-buttons {
-    box-sizing: border-box;
     cursor: pointer;
     background-color: var(--inactive-filter-color);
     color: var(--primary-color);
@@ -446,20 +438,21 @@ footer {
 .card-link {
     border: 1px solid #EEE;
     background: #FFF;
-    width: calc(100% / 3 - 20px)   
+    width: calc(100% / 3 - 20px)
 }
 
-.card-img{
-    padding-bottom:20px ;
+.card-img {
+    padding-bottom: 20px;
 }
-.card-title{
+
+.card-title {
     display: flex;
     margin: 0;
     padding: 0px 24px;
     justify-content: flex-start;
 }
 
-.card-text{
+.card-text {
     display: flex;
     margin: 0;
     padding: 4px 24px 20px 24px;
