@@ -1,4 +1,4 @@
-:root { 
+:root {
     --primary-color: #212121;
     --secondary-color: #757575;
     --background-primary-color: #FFFFFF;
@@ -9,9 +9,9 @@
 }
 
 html {
-    box-sizing: border-box;
     font-size: 14px;
 }
+
 
 body {
     font-family: 'Roboto';
@@ -22,18 +22,58 @@ body {
 
 }
 
+body,
+h1, h2, h3,
+p,
+ul,
+li {
+    margin: 0;
+    padding: 0;
+}
+
 li {
     list-style-type: none;
 }
 
 a {
     text-decoration: none;
-    color:#2F303A;
+    color: #2F303A;
+}
+
+img{
+    display: block;
+}
+
+/* CONTAINER */
+
+.header {
+    border-bottom: 1px solid #ececec;
+    height: 80px;
+}
+
+.container {
+    max-width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.container-menu {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
 }
 
 /* HEADER */
 
-span {
+.logo {
     font-family: 'Raleway', sans-serif;
     color: var(--accent-color);
     font-weight: 700;
@@ -48,23 +88,39 @@ span {
     font-size: 26px;
     letter-spacing: 0.78px;
 
+    margin-right: 90px;
 }
 
-.menu {
+.menu-list {
     color: var(--primary-color);
     font-size: 14px;
     font-weight: 500;
     letter-spacing: 0.28px;
+
+    display: flex;
+    gap: 50px
 }
 
-.menu .link:hover,
-.link:active,
-.link:focus {
+.menu-list .menu-item:hover,
+.menu-item:active,
+.menu-item:focus {
     color: var(--accent-color);
     transition: 300ms ease-in;
 }
 
-.contacts{
+.menu-item,
+.contact-item {
+    padding: 32px 0px;
+    display: inline-block;
+}
+
+.contact-list {
+    display: flex;
+    gap: 40px;
+    margin-left: auto;
+}
+
+.contact-item {
     color: var(--secondary-color);
     font-weight: 500;
     letter-spacing: 0.28px;
@@ -72,9 +128,9 @@ span {
     text-decoration: none;
 }
 
-.contact-info .contacts:hover,
-.contacts:active,
-.contacts.link:focus {
+.contact-list .contact-item:hover,
+.contact-item:active,
+.contact-item:focus {
     color: var(--accent-color);
     transition: 300ms ease-in;
 }
@@ -85,114 +141,188 @@ span {
 
 /*main-body*/
 
-.big-text {
-    box-sizing: border-box;
-    background: var(--background-secondary-color);
+.hero-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
 }
 
-h1 {
+.hero {
+    background: var(--background-secondary-color);
+    height: 600px;
+}
+
+.title {
     color: var(--background-primary-color);
     font-size: 44px;
     font-weight: 900;
     line-height: normal;
     text-align: center;
     text-transform: uppercase;
+    max-width: 696px;
 }
 
-.button-center {
-    box-sizing: border-box;
+.hero-button {
     cursor: pointer;
     border-radius: 4px;
     background: var(--accent-color);
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
     color: var(--background-primary-color);
     font-size: 16px;
-    line-height: normal;
+    line-height: 1.8;
     letter-spacing: 0.96px;
-    
-}
 
-.button-center:active {
-    box-sizing: border-box;
-    cursor: pointer;
-    border-radius: 4px;
-    background: #188CE8;
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
-    color: var(--background-primary-color);
-    font-size: 16px;
-    line-height: normal;
-    letter-spacing: 0.96px;
+    padding: 10px 24px;
+    margin-top: 30px;
+    border: none;
     transition: 300ms ease-in;
 }
 
-.feature-main {
+.hero-button:hover,
+.hero-button:focus {
+    background: #188CE8;
+}
+
+.benefit {
+    padding: 94px 0px;
+}
+
+.benefit-list {
+    display: flex;
+    gap: 30px;
+}
+
+.benefit-item {
+    width: 100%;
+
+}
+
+.benefit-title {
     color: var(--primary-color);
     font-weight: 700;
     line-height: normal;
     letter-spacing: 0.03em;
     text-align: left;
     text-transform: uppercase;
+
+    margin-bottom: 10px;
 }
 
-.feature-post {
+.benefit-text {
     color: var(--secondary-color);
     font-weight: 400;
     line-height: normal;
     letter-spacing: 0.03em;
     text-align: left;
+
+
 }
 
-.employment-header {
+.work {
+    padding-bottom: 94px;
+}
+
+.work-list {
+    display: flex;
+    width: 100%;
+    gap: 30px;
+}
+
+.work-title {
     color: var(--primary-color);
     text-align: center;
     font-size: 36px;
     font-weight: 700;
     letter-spacing: 1.08px;
+
+    margin-bottom: 50px;
+
 }
 
-.team-header {
+.team {
+    background: var(--inactive-filter-color);
+    padding: 94px 0px;
+}
+
+.team-title {
     color: var(--primary-color);
     font-size: 36px;
     font-weight: 700;
     line-height: normal;
     letter-spacing: 0.03em;
     text-align: center;
+
+    margin-bottom: 50px;
 }
 
-.card-person {
-    box-sizing: border-box;
+.team-list {
+    display: flex;
+    width: 100%;
+    gap: 30px;
 }
 
-.person-info {
+.team-item {
+    border-radius: 0px 0px 4px 4px;
+    background: #FFF;
+
+    /* material shadow v1 */
+    box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.20),
+        0px 1px 1px 0px rgba(0, 0, 0, 0.14),
+        0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+        padding-bottom: 30px;
+
+}
+
+.team-img {
+    margin-bottom: 30px;
+}
+
+.team-name {
     font-size: 16px;
     font-weight: 500;
-    line-height: normal;
     letter-spacing: 0.03em;
+
+    text-align: center;
+    margin-bottom: 10px;
 
 }
 
-.person-profession {
+.team-text {
     color: var(--secondary-color);
     font-size: 16px;
     font-weight: 400;
     line-height: normal;
     letter-spacing: 0.03em;
-    
+
+    text-align: center;
+
 }
 
 /* footer */
 
 footer {
-    box-sizing: border-box;
     background: var(--background-secondary-color);
+    padding: 60px 0px;
 }
 
-.web-studio-footer {
+.webstudio-footer {
     color: var(--background-primary-color);
     font-family: 'Raleway', sans-serif;
     font-weight: 700;
     font-size: 26px;
     letter-spacing: 0.78px;
+
+    display: flex;
+}
+
+.address {
+    display: block;
+    flex-direction: row;
+    justify-content: flex-start;
+
 }
 
 .address-text {
@@ -201,7 +331,20 @@ footer {
     font-weight: 400;
     line-height: 16px;
     letter-spacing: 0.42px;
+
+    margin: 28px 0px 0px 0px;
 }
+
+.footer-list {
+    flex-direction: row;
+    justify-content: flex-start;
+    padding: 0;
+}
+
+.footer-item {
+    margin-top: 12px;
+}
+
 
 .footer-contacts {
     color: rgba(255, 255, 255, 0.60);
@@ -209,6 +352,7 @@ footer {
     font-weight: 400;
     line-height: normal;
     letter-spacing: 0.42px;
+
 }
 
 .footer-contacts:hover {
@@ -217,8 +361,26 @@ footer {
 
 /* portfolio part */
 
-.buttons {
-    box-sizing: border-box;
+.portfolio {
+    padding: 94px 0px;
+}
+
+.portfolio-item {
+    display: flex;
+    justify-content: center;
+}
+
+.portfolio-list {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+
+    margin-bottom: 50px;
+}
+
+.portfolio-buttons {
     cursor: pointer;
     background-color: var(--inactive-filter-color);
     color: var(--primary-color);
@@ -226,31 +388,79 @@ footer {
     font-family: Roboto;
     font-size: 16px;
     font-weight: 500;
-    line-height: normal;
     letter-spacing: 0.48px;
     transition: 300ms ease-in;
+    border: none;
+
+    padding: 6px 22px;
+    border-radius: 4px;
+
 }
 
-.menu-button .buttons:hover,
-.buttons:active,
-.buttons:focus {
+.buttons-active {
+    color: var(--background-primary-color);
+    background: #2196F3;
+    transition: 300ms ease-in;
+
+    /* shadow-middle */
+    box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12), 0px 1px 2px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.10);
+}
+
+.portfolio-list .portfolio-buttons:hover,
+.portfolio-buttons:focus {
     background-color: var(--accent-color);
     color: var(--background-primary-color);
     cursor: pointer;
 }
 
-.tab-name {
+.card-title {
     font-size: 18px;
     font-weight: 700;
     line-height: normal;
     letter-spacing: 0.06em;
     text-align: left;
     color: var(--primary-color);
+
+    margin-bottom: 4px;
 }
 
-.tab-type {
+.card-text {
     font-size: 16px;
     font-weight: 400;
     line-height: normal;
     color: var(--secondary-color);
 }
+
+.card-list {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+    margin: 0;
+    gap: 30px;
+}
+
+.card-item {
+    width: calc((100% - 60px) / 3);
+}
+
+.card-link {
+    border: 1px solid #EEE;
+    background: #FFF;
+    
+}
+
+.card-desk{
+    padding: 20px 24px;
+}
+
+.card-title {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.card-text {
+    display: flex;
+    
+    justify-content: flex-start;
+}
+
