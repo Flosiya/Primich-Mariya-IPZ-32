@@ -23,7 +23,9 @@ body {
 }
 
 body,
-h1, h2, h3,
+h1,
+h2,
+h3,
 p,
 ul,
 li {
@@ -40,7 +42,7 @@ a {
     color: #2F303A;
 }
 
-img{
+img {
     display: block;
 }
 
@@ -151,7 +153,7 @@ img{
 }
 
 .hero {
-    background: var(--background-secondary-color);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.40) 0%, rgba(47, 48, 58, 0.40) 100%), url('../images/background_img.png');
     height: 600px;
 }
 
@@ -272,7 +274,7 @@ img{
     box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.20),
         0px 1px 1px 0px rgba(0, 0, 0, 0.14),
         0px 1px 3px 0px rgba(0, 0, 0, 0.12);
-        padding-bottom: 30px;
+    padding-bottom: 30px;
 
 }
 
@@ -446,10 +448,12 @@ footer {
 .card-link {
     border: 1px solid #EEE;
     background: #FFF;
-    
+
+    box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16), 0px 4px 4px 0px rgba(0, 0, 0, 0.06), 0px 1px 1px 0px rgba(0, 0, 0, 0.12);
+
 }
 
-.card-desk{
+.card-desk {
     padding: 20px 24px;
 }
 
@@ -460,7 +464,6 @@ footer {
 
 .card-text {
     display: flex;
-    
+
     justify-content: flex-start;
 }
-
