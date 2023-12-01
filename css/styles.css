@@ -137,26 +137,12 @@ img {
 .contact-item:active,
 .contact-item:focus {
     color: var(--accent-color);
-    transition: 300ms ease-in;
 }
 
-.link-active {
-    color: var(--accent-color);
-    transition: 300ms ease-in;
-}
-
-.header-icon {
-    fill: var(--secondary-color);
-}
-
-.contact-link:hover .header-icon {
+.contact-item:hover .svg {
     fill: var(--accent-color);
 }
 
-.contact-link:hover .contact-item {
-    transition: 300ms ease-in;
-    color: var(--accent-color);
-}
 
 
 
@@ -214,6 +200,7 @@ img {
 .benefit-list {
     display: flex;
     gap: 30px;
+
 }
 
 .benefit-item {
@@ -233,10 +220,12 @@ img {
 
 .benefit-title {
     color: var(--primary-color);
+    font-family: Roboto;
+    font-size: 14px;
+    font-style: normal;
     font-weight: 700;
     line-height: normal;
     letter-spacing: 0.42px;
-    text-align: left;
     text-transform: uppercase;
 
     margin-bottom: 10px;
@@ -244,10 +233,13 @@ img {
 
 .benefit-text {
     color: var(--secondary-color);
+    font-family: Roboto;
+    font-size: 14px;
+    font-style: normal;
     font-weight: 400;
-    line-height: normal;
+    line-height: 24px;
+    /* 171.429% */
     letter-spacing: 0.42px;
-    text-align: left;
 
 
 }
@@ -343,14 +335,16 @@ img {
     width: 44px;
 }
 
+
 .team-icon:hover,
-.team-icon:active .icon-link {
+.team-icon:active .team-icon {
     transition: 300ms ease-in;
+
     background-color: var(--accent-color);
 
 }
 
-.team-icon:hover .icon-link {
+.team-icon:hover .team-svg {
     fill: var(--background-primary-color);
 }
 
@@ -361,6 +355,10 @@ img {
     display: flex;
     align-items: center;
     justify-content: center;
+
+}
+
+.team-svg {
     fill: #AFB1B8;
 }
 
@@ -387,26 +385,30 @@ img {
     gap: 30px;
 }
 
-.customers-item {
+
+.customers-link {
+    display: flex;
     padding: 12px 32px;
-    fill: #AFB1B8;
-    ;
+    height: 100%;
+    width: 100%;
 
     border-radius: 4px;
     border: 1px solid #AFB1B8;
+    transition: 300ms ease-in;
+
 }
 
-.customers-link {
+.customers-svg {
     fill: #AFB1B8;
+    transition: 300ms ease-in;
 }
 
-.customers-link:hover {
+.customers-link:hover .customers-svg {
     fill: var(--accent-color);
 }
 
-.customers-item:hover,
-.customers-item:active {
-    cursor: pointer;
+.customers-link:hover,
+.ccustomers-link:active {
     fill: var(--accent-color);
     border: 1px solid #188CE8;
     transition: 300ms ease-in;
@@ -497,15 +499,15 @@ footer {
 }
 
 .footer-contact-list {
+    margin-top: 20px;
     width: 100%;
     display: flex;
     gap: 10px;
 
 }
 
-.footer-contact-item {
-    margin-top: 20px;
 
+.footer-link {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -516,12 +518,12 @@ footer {
     background-color: rgba(255, 255, 255, 0.10);
 }
 
-.footer-link{
-    fill:var(--background-primary-color);
+.footer-svg {
+    fill: var(--background-primary-color);
 }
 
-.footer-contact-item:hover,
-.footer-contact-item:active {
+.footer-link:hover,
+.footer-link:active {
     cursor: pointer;
     fill: var(--background-primary-color);
     background-color: var(--accent-color);
@@ -584,20 +586,26 @@ footer {
 }
 
 .card-title {
+    color: #212121;
+    font-family: Roboto;
     font-size: 18px;
+    font-style: normal;
     font-weight: 700;
-    line-height: normal;
-    letter-spacing: 0.06em;
-    text-align: left;
-    color: var(--primary-color);
+    line-height: 36px;
+    /* 200% */
+    letter-spacing: 1.08px;
 
     margin-bottom: 4px;
 }
 
 .card-text {
+    font-family: Roboto;
     font-size: 16px;
+    font-style: normal;
     font-weight: 400;
-    line-height: normal;
+    line-height: 30px;
+    /* 187.5% */
+    letter-spacing: 0.48px;
     color: var(--secondary-color);
 }
 
