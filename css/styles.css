@@ -720,6 +720,10 @@ footer {
     fill: #2196F3;
 }
 
+.button-close:focus .modal-svg {
+    fill: #2196F3;
+}
+
 .head-text {
     color: var(--primary-color);
     text-align: center;
@@ -752,7 +756,8 @@ footer {
     left: 53px;
 
     fill: var(--primary-color);
-}
+    pointer-events: none
+}   
 
 .modal-label {
     color: #757575;
@@ -782,7 +787,7 @@ footer {
     border: 1px solid #2196F3;
 }
 
-.modal-input:hover+.input-svg {
+.modal-input:hover + .input-svg {
     fill: var(--accent-color);
 }
 
@@ -824,6 +829,7 @@ textarea:focus {
 
 
 .modal-agreement {
+    cursor: pointer;
     display: flex;
     justify-content: center;
 
