@@ -716,6 +716,10 @@ footer {
     cursor: pointer;
 }
 
+.modal-svg{
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1); 
+}
+
 .button-close:hover .modal-svg {
     fill: #2196F3;
 }
@@ -756,7 +760,8 @@ footer {
     left: 53px;
 
     fill: var(--primary-color);
-    pointer-events: none
+    pointer-events: none;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }   
 
 .modal-label {
@@ -833,7 +838,6 @@ textarea:focus {
 .modal-agreement {
     cursor: pointer;
     display: flex;
-    justify-content: center;
 
     color: #757575;
     font-family: Roboto;
@@ -843,6 +847,7 @@ textarea:focus {
     line-height: 24px;
     /* 171.429% */
     letter-spacing: 0.42px;
+    padding: 0px 40px;
 }
 
 .checkbox-active {
@@ -852,7 +857,7 @@ textarea:focus {
 .checkbox-passive {
     display: flex;
     align-items: center;
-    margin: 2px;
+    margin: 4px 7px 4px 13px;
 
     width: 16px;
     height: 15px;
@@ -893,7 +898,11 @@ textarea:focus {
     margin-top: 30px;
     padding: 10px 52px;
 }
-
+ 
+.button-send:hover,
+.button-send:focus {
+    background: #188CE8;
+}
 
 
 /* portfolio part */
