@@ -529,6 +529,7 @@ footer {
     gap: 10px;
     white-space: nowrap;
 
+    margin: 28px 0px 0px 0px;
 }
 
 
@@ -538,8 +539,6 @@ footer {
     font-weight: 400;
     line-height: 16px;
     letter-spacing: 0.42px;
-
-    margin: 28px 0px 0px 0px;
 }
 
 
@@ -603,10 +602,10 @@ footer {
 }
 
 .footer-submit {
-    width: 100%;  
+    width: 100%;
     display: flex;
     flex-direction: row;
-    flex-wrap:wrap;
+    flex-wrap: wrap;
 
 }
 
@@ -638,7 +637,8 @@ footer {
     margin-right: 12px;
 }
 
-.footer-input:focus, .footer-input:hover {
+.footer-input:focus,
+.footer-input:hover {
     border: 1px solid var(--background-primary-color);
     color: var(--background-primary-color);
     outline: none;
@@ -668,7 +668,10 @@ footer {
     gap: 10px;
 }
 
-
+.submit-button:hover,
+.submit-button:focus {
+    background: #188CE8;
+}
 
 
 
@@ -692,6 +695,7 @@ footer {
 }
 
 .modal-window {
+    padding: 40px;
     position: relative;
     width: 528px;
     height: 581px;
@@ -716,8 +720,8 @@ footer {
     cursor: pointer;
 }
 
-.modal-svg{
-    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1); 
+.modal-svg {
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .button-close:hover .modal-svg {
@@ -737,32 +741,32 @@ footer {
     line-height: normal;
     letter-spacing: 0.6px;
 
-    margin-top: 40px;
     margin-bottom: 12px;
 }
 
 .modal-singup {
     display: flex;
     flex-direction: column;
-    padding: 0px 40px;
-
     width: 100%;
     height: 100%;
-
-
     position: relative;
 
+    margin-bottom: 10px;
+}
+
+.modal-singup:last-child {
+    margin-bottom: 20px;
 }
 
 .input-svg {
     position: absolute;
-    bottom: 22px;
-    left: 53px;
+    bottom: 13px;
+    left: 13px;
 
     fill: var(--primary-color);
     pointer-events: none;
     transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}   
+}
 
 .modal-label {
     color: #757575;
@@ -784,7 +788,6 @@ footer {
     border-radius: 4px;
     border: 1px solid rgba(33, 33, 33, 0.20);
 
-    margin-bottom: 10px;
     padding-left: 42px;
     transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -793,7 +796,7 @@ footer {
     border: 1px solid #2196F3;
 }
 
-.modal-input:hover + .input-svg {
+.modal-input:hover+.input-svg {
     fill: var(--accent-color);
 }
 
@@ -803,7 +806,7 @@ footer {
     outline: none;
 }
 
-.modal-input:focus + .input-svg {
+.modal-input:focus+.input-svg {
     fill: var(--accent-color);
 }
 
@@ -817,7 +820,7 @@ footer {
     border-radius: 4px;
     border: 1px solid rgba(33, 33, 33, 0.20);
 
-    margin-bottom: 20px;
+
     padding: 12px 16px;
     transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -838,6 +841,8 @@ textarea:focus {
 .modal-agreement {
     cursor: pointer;
     display: flex;
+    justify-content: center;
+    align-items: center;
 
     color: #757575;
     font-family: Roboto;
@@ -847,7 +852,7 @@ textarea:focus {
     line-height: 24px;
     /* 171.429% */
     letter-spacing: 0.42px;
-    padding: 0px 40px;
+
 }
 
 .checkbox-active {
@@ -857,7 +862,7 @@ textarea:focus {
 .checkbox-passive {
     display: flex;
     align-items: center;
-    margin: 4px 7px 4px 13px;
+    margin-right: 7px;
 
     width: 16px;
     height: 15px;
@@ -898,7 +903,7 @@ textarea:focus {
     margin-top: 30px;
     padding: 10px 52px;
 }
- 
+
 .button-send:hover,
 .button-send:focus {
     background: #188CE8;
@@ -996,6 +1001,10 @@ textarea:focus {
     width: calc((100% - 60px) / 3);
 }
 
+.card-item:focus .card-overlay {
+    outline: none;
+}
+
 .card-link {
     background: #FFF;
     border: 1px solid #EEE;
@@ -1003,9 +1012,14 @@ textarea:focus {
 
 }
 
-.card-link:hover {
+.card-link:hover .card-overlay {
     transition: 500ms;
     box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16), 0px 4px 4px 0px rgba(0, 0, 0, 0.06), 0px 1px 1px 0px rgba(0, 0, 0, 0.12);
+}
+
+.card-link:hover .card-overlay,
+.card-link:focus .card-overlay {
+    transform: translateY(0);
 }
 
 .card-desk {
@@ -1052,8 +1066,4 @@ textarea:focus {
 
     transform: translateY(101%);
     transition: 350ms ease;
-}
-
-.card-link:hover .card-overlay {
-    transform: translateY(0);
 }

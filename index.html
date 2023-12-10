@@ -387,16 +387,20 @@
                     </li>
                 </ul>
             </div>
-            <form action="footer-submit" class="footer-submit">
-            <h3 class="submit-text">Підпишіться на розсилку</h3>
-            <input type="email" placeholder="E-mail" class="footer-input">
-            <button type="submit" class="submit-button">
-                Підписатися
-                <svg class="send-svg" width="23px" height="22.992px">
-                    <use xlink:href="./images/icons.svg#icon-send"></use>
-                </svg>
-            </button>
-            </form>
+            <div class="submit-container">
+                <h3 class="submit-text">Підпишіться на розсилку</h3>
+                <form action="footer-submit" class="footer-submit">
+
+                    <input type="email" placeholder="E-mail" class="footer-input">
+                    <button type="submit" class="submit-button">
+                        Підписатися
+                        <svg class="send-svg" width="23px" height="22.992px">
+                            <use xlink:href="./images/icons.svg#icon-send"></use>
+                        </svg>
+                    </button>
+                </form>
+            </div>
+
         </div>
     </footer>
     <div class="modal is-hidden" data-modal>
@@ -409,31 +413,31 @@
             <h2 class="head-text">Залиште свої дані, ми вам передзвонимо</h2>
             <form name="signup_form" autocomplete="on" novalidate>
                 <div class="modal-singup">
-                    <label class="modal-label" > Ім'я </label>
-                    <input class="modal-input" type="text" placeholder="" name="name">
+                    <label class="modal-label" for="name-label"> Ім'я </label>
+                    <input class="modal-input" type="text" placeholder="" name="name" id="name-label">
                     <svg class="input-svg" width="18" height="18">
                         <use xlink:href="./images/icons.svg#person-black"></use>
                     </svg>
                 </div>
                 <div class="modal-singup">
-                    <label class="modal-label"> Телефон</label>
-                    <input class="modal-input" type="tel" name="tel" />
+                    <label class="modal-label" for="tel-label"> Телефон</label>
+                    <input class="modal-input" type="tel" name="tel" id="tel-label" />
                     <svg class="input-svg" width="18" height="18">
                         <use xlink:href="./images/icons.svg#phone-black"></use>
                     </svg>
                 </div>
                 <div class="modal-singup">
-                    <label class="modal-label"> Пошта</label>
-                    <input class="modal-input" type="email" name="email" />
+                    <label class="modal-label"for="email-label" > Пошта</label>
+                    <input class="modal-input" type="email" name="email" id="email-label" />
                     <svg class="input-svg" width="18" height="18">
                         <use xlink:href="./images/icons.svg#email-black"></use>
                     </svg>
 
                 </div>
                 <div class="modal-singup">
-                    <label class="modal-label"> Коментар</label>
+                    <label class="modal-label" for="taxtarea-label"> Коментар</label>
                     <div class="coment">
-                        <textarea placeholder="Введіть текст"></textarea>
+                        <textarea placeholder="Введіть текст" id="taxtarea-label"></textarea>
                     </div>
                 </div>
                 <label class="modal-agreement" for="checkbox">
