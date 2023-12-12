@@ -754,7 +754,7 @@ footer {
     margin-bottom: 10px;
 }
 
-.modal-singup:last-child {
+.modal-singup:last-of-type {
     margin-bottom: 20px;
 }
 
