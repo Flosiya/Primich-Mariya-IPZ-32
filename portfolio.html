@@ -19,8 +19,7 @@
 <body>
     <header class="header">
         <div class="header-container container">
-            <a class="web-studio" href="#"><span class="logo">Web</span>Studio</a>
-
+            <a class="web-studio" href="index.html"><span class="logo">Web</span>Studio</a>
             <nav class="nav">
                 <ul class="menu-list">
                     <li class="menu-link">
@@ -75,8 +74,8 @@
                     </li>
                 </ul>
                 <ul class="card-list">
-                    <li class="card-link">
-                        <a class="card-item" href="#">
+                    <li class="card-link" tabindex="0">
+                        <a class="card-item" href="#" tabindex="1">
                             <div class="card-wrapper">
                                 <img class="card-img" src="images/pers_in_laptop.jpg" alt="person using laptop"
                                     width="370">
@@ -93,8 +92,8 @@
                             </div>
                         </a>
                     </li>
-                    <li class="card-link">
-                        <a class="card-item" href="#">
+                    <li class="card-link" tabindex="0">
+                        <a class="card-item" href="#" tabindex="1">
                             <div class="card-wrapper">
                                 <img class="card-img" src="images/sportmen.jpg" alt="two sportmen playing" width="370">
                                 <div class="card-overlay">
@@ -112,8 +111,8 @@
                         </a>
 
                     </li>
-                    <li class="card-link">
-                        <a class="card-item" href="#">
+                    <li class="card-link" tabindex="0">
+                        <a class="card-item" href="#" tabindex="1">
                             <div class="card-wrapper">
                                 <img class="card-img" src="images/seafood.jpg" alt="restaurant seafood" width="370">
                                 <div class="card-overlay">
@@ -129,8 +128,8 @@
                         </a>
 
                     </li>
-                    <li class="card-link">
-                        <a class="card-item" href="#">
+                    <li class="card-link" tabindex="0">
+                        <a class="card-item" href="#" tabindex="1">
                             <div class="card-wrapper">
                                 <img class="card-img" src="images/headphone.jpg" alt="picture headphone" width="370">
                                 <div class="card-overlay">
@@ -146,8 +145,8 @@
                             </div>
                         </a>
                     </li>
-                    <li class="card-link">
-                        <a class="card-item" href="#">
+                    <li class="card-link" tabindex="0">
+                        <a class="card-item" href="#" tabindex="1">
                             <div class="card-wrapper">
                                 <img class="card-img" src="images/blocks.jpg" alt="project boxes" width="370">
                                 <div class="card-overlay">
@@ -163,8 +162,8 @@
                             </div>
                         </a>
                     </li>
-                    <li class="card-link">
-                        <a class="card-item" href="#">
+                    <li class="card-link" tabindex="0">
+                        <a class="card-item" href="#" tabindex="1">
                             <div class="card-wrapper">
                                 <img class="card-img" src="images/screen.jpg" alt="picture screen" width="370">
                                 <div class="card-overlay">
@@ -180,8 +179,8 @@
                             </div>
                         </a>
                     </li>
-                    <li class="card-link">
-                        <a class="card-item" href="#">
+                    <li class="card-link" tabindex="0">
+                        <a class="card-item" href="#" tabindex="1">
                             <div class="card-wrapper">
                                 <img class="card-img" src="images/journey.jpg" alt="picture journey" width="370">
                                 <div class="card-overlay">
@@ -197,8 +196,8 @@
                             </div>
                         </a>
                     </li>
-                    <li class="card-link">
-                        <a class="card-item" href="#">
+                    <li class="card-link" tabindex="0">
+                        <a class="card-item" href="#" tabindex="1">
                             <div class="card-wrapper">
                                 <img class="card-img" src="images/lab_el_tag.jpg" alt="project LAB" width="370">
                                 <div class="card-overlay">
@@ -214,8 +213,8 @@
                             </div>
                         </a>
                     </li>
-                    <li class="card-link">
-                        <a class="card-item" href="#">
+                    <li class="card-link" tabindex="0">
+                        <a class="card-item" href="#" tabindex="1">
                             <div class="card-wrapper">
                                 <img class="card-img" src="images/laptop.jpg" alt="picture laptop" width="370">
                                 <div class="card-overlay">
@@ -239,17 +238,11 @@
     <footer class="footer">
         <div class="footer-container-main container">
             <div class="footer-container">
-                <a class="webstudio-footer" href="#"><span class="logo">Web</span>Studio</a>
+                <a class="webstudio-footer" href="index.html"><span class="logo">Web</span>Studio</a>
                 <address class="address">
                     <p class="address-text">м. Київ, пр-т Лесі Українки, 26 </p>
-                    <ul class="footer-list">
-                        <li class="footer-item">
-                            <a class="footer-contacts" href="mailto:info@devstudio.com">info@devstudio.com</a>
-                        </li>
-                        <li class="footer-item">
-                            <a class="footer-contacts" href="tel:+380961111111">+38 096 111 11 11</a>
-                        </li>
-                    </ul>
+                    <a class="footer-contacts" href="mailto:info@devstudio.com">info@devstudio.com</a>
+                    <a class="footer-contacts" href="tel:+380961111111">+38 096 111 11 11</a>
                 </address>
             </div>
             <div class="footer-add">
@@ -285,6 +278,16 @@
                     </li>
                 </ul>
             </div>
+            <form action="footer-submit" class="footer-submit">
+                <h3 class="submit-text">Підпишіться на розсилку</h3>
+                <input type="email" placeholder="E-mail" class="footer-input">
+                <button type="submit" class="submit-button">
+                    Підписатися
+                    <svg class="send-svg" width="23px" height="22.992px">
+                        <use xlink:href="./images/icons.svg#icon-send"></use>
+                    </svg>
+                </button>
+                </form>
     </footer>
 </body>
 
