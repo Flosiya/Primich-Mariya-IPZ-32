@@ -1,5 +1,5 @@
 const modalController = () => {
-  const buttonElem = document.querySelector('.hero-button');
+  const buttonElem = document.querySelector('.hero__button');
   const modalElem = document.querySelector('.modal');
   const bodyElem = document.querySelector('body');
 
@@ -13,7 +13,7 @@ const modalController = () => {
   const closeModal = event => {
     const target = event.target;
 
-    if (target === modalElem || target.closest('.button-close')) {
+    if (target === modalElem || target.closest('.modal__close')) {
 
       modalElem.style.opacity = 0;
       bodyElem.classList.remove('fixed');
