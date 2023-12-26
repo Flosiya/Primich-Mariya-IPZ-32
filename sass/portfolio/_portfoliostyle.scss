@@ -33,7 +33,7 @@
         border-radius: 4px;
     }
 
-    &__buttons--active {
+    &__buttons.active {
         color: $background-primary-color;
         background: #2196F3;
         transition: 300ms ease-in;
@@ -60,7 +60,7 @@
 
 .card-list {
 
-    &__item{
+    &__item {
         transition: 350ms ease;
         background: #FFF;
         border: 1px solid #EEE;
@@ -73,10 +73,9 @@
 
 
     &__item:hover {
-        
         box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16), 0px 4px 4px 0px rgba(0, 0, 0, 0.06), 0px 1px 1px 0px rgba(0, 0, 0, 0.12);
-    } 
-    
+    }
+
     &__item:hover,
     &__item:focus &__overlay {
         .card-list__overlay {
@@ -106,6 +105,8 @@
 
         transform: translateY(101%);
         transition: 350ms ease;
+
+
     }
 
     .overlay {
@@ -129,11 +130,95 @@
     &__title {
         display: flex;
         justify-content: flex-start;
+         color: #212121;
+        font-family: Roboto;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 36px;
+        /* 200% */
+        letter-spacing: 1.08px;
     }
 
     &__text {
         display: flex;
         justify-content: flex-start;
+        color: #757575;
+        font-family: Roboto;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 30px;
+        /* 187.5% */
+        letter-spacing: 0.48px;
     }
 
+}
+
+@media (max-width:1200px) {
+    .card-list {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        &__item {
+           width: calc(33% - 20px);
+           max-width: none;
+        }
+        .overlay__text{
+            font-size: 16px;
+            line-height: 1.2;
+        }
+    }
+    
+}
+
+@media (max-width:768px) {
+    .portfolio {
+        padding-top: 66px;
+        padding-bottom: 60px;
+
+        &__list{
+            margin-bottom: 36px;
+        }
+    }
+    .card-list {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        &__item {
+           width: calc(50% - 15px);
+           max-width: none;
+        }
+        .overlay__text{
+            font-size: 14px;
+            line-height: 1.2;
+        }
+    }
+    
+}
+
+@media (max-width:576px) {
+    .portfolio {
+        padding: 60px 0px;
+        &__list {
+            display: flex;
+            flex-wrap: wrap;
+            width: 80%;
+            justify-content: flex-start;
+            margin-bottom: 40px;
+        }
+    }
+    .card-list {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        &__item {
+           width: 100%;
+           max-width: none;
+        }
+        .overlay__text{
+            font-size: 12px;
+            line-height: 1.2;
+        }
+    }
 }

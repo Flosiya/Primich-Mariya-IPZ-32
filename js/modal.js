@@ -1,32 +1,20 @@
 const modalController = () => {
-  const buttonElem = document.querySelector('.hero__button');
-  const modalElem = document.querySelector('.modal');
+  const buttonElem = document.querySelector('[data-modal-open]');
+  const modalElem = document.querySelector('[data-modal]');
   const bodyElem = document.querySelector('body');
-
-  modalElem.style.cssText = `
-  display: flex;
-  visibility: hidden;
-  opacity:0;
-  transition: opacity 300ms ease-in-out;
-  `;
 
   const closeModal = event => {
     const target = event.target;
 
-    if (target === modalElem || target.closest('.modal__close')) {
-
-      modalElem.style.opacity = 0;
+    if (target === modalElem || target.closest('[data-modal-close]')) {
       bodyElem.classList.remove('fixed');
-      setTimeout(() => {
-        modalElem.style.visibility = 'hidden';
-      }, 300)
+      modalElem.classList.remove('active');
     }
   }
 
   const openModal = () => {
-    modalElem.style.visibility = 'visible';
-    modalElem.style.opacity = 1;
     bodyElem.classList.add('fixed');
+    modalElem.classList.add('active');
   };
   buttonElem.addEventListener('click', openModal);
   modalElem.addEventListener('click', closeModal);
