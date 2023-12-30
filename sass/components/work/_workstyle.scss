@@ -40,3 +40,15 @@
         background-color: rgba(47, 48, 58, 0.80);
     }
 }
+
+@media (max-width:480px){
+    .work{
+        display: none;
+    }
+}
+
+@media (max-width:768px){
+    .work{
+        display: none;
+    }
+}

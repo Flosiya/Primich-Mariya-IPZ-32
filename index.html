@@ -12,14 +12,14 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="css/main.min.css">
+    <link rel="stylesheet" href="./css/main.min.css">
 
 
 </head>
 
 <body>
     <header class="header">
-        <div class="header-container container  header__container container">
+        <div class="header__container container">
             <a class="logo" href="index.html">
                 <span class="logo__text--blue">Web</span>Studio
             </a>
@@ -36,7 +36,7 @@
                     </li>
                 </ul>
             </nav>
-            <ul class=" contacts">
+            <ul class="contacts">
                 <li class="contacts__item">
                     <a class="contacts__link" href="mailto:info@devstudio.com">
                         <svg class="svg contacts__svg" width="16" height="12">
@@ -50,6 +50,51 @@
                             <use href="./images/icons.svg#phone"></use>
                         </svg>
                         +38 096 111 11 11</a>
+                </li>
+            </ul>
+            <button class="mobile__button" type="button" data-menu-button aria-expanded="false">
+                <svg class="mobile__svg" width="40" height="40">
+                    <use class="mobile__svg--open" href="./images/icons.svg#mobile_menu"></use>
+                    <use class="mobile__svg--close" xlink:href="./images/icons.svg#close_mobile"></use>
+                </svg>
+            </button>
+        </div>
+        <div class="mobile" data-menu>
+            <nav class="mobile-nav">
+                <ul class="mobile-nav__list">
+                    <li class="mobile-nav__item">
+                        <a class="mobile-nav__link  mobile-nav__link--active" href="#">Студія</a>
+                    </li>
+                    <li class=" mobile-nav__item">
+                        <a class="mobile-nav__link" href="portfolio.html">Портфоліо</a>
+                    </li>
+                    <li class="mobile-nav__item">
+                        <a class="mobile-nav__link" href="#">Контакти</a>
+                    </li>
+                </ul>
+            </nav>
+            <ul class="mobile-contacts">
+                <li class="mobile-contacts__item">
+                    <a class="mobile-contacts__link--number" href="tel:+380961111111">
+                        +38 096 111 11 11</a>
+                </li>
+                <li class="mobile-contacts__item">
+                    <a class="mobile-contacts__link" href="mailto:info@devstudio.com">
+                        info@devstudio.com</a>
+                </li>
+            </ul>
+            <ul class="mobile__network">
+                <li class="mobile__network-item">
+                    <a href="" class="mobile__network-link">Instagram</a>
+                </li>
+                <li class="mobile__network-item">
+                    <a href="" class="mobile__network-link">Twitter</a>
+                </li>
+                <li class="mobile__network-item">
+                    <a href="" class="mobile__network-link">Facebook</a>
+                </li>
+                <li class="mobile__network-item">
+                    <a href="" class="mobile__network-link">LinkedIn</a>
                 </li>
             </ul>
         </div>
@@ -66,7 +111,7 @@
         <section class="benefits">
             <div class=" benefits__container container">
                 <ul class=" benefits__list">
-                    <li class=" benefits__item">
+                    <li class="benefits__item">
                         <div class=" benefits__icon">
                             <svg width="70" height="70">
                                 <use xlink:href="./images/icons.svg#antenna"></use>
@@ -137,7 +182,8 @@
                 <div class="team__card card">
                     <ul class="card__list">
                         <li class="card__item">
-                            <img class="card__img" src="images/Igor_Demyanenko.jpg" alt="Iгор Дем'яненко" width="270">
+                            <img class="card__img" sizes="100vw" src="images/Igor_Demyanenko1600.jpg"
+                                alt="Iгор Дем'яненко">
                             <div class="card__frame">
                                 <h3 class="card__name">Ігор Дем'яненко</h3>
                                 <p class="card__text">Product Designer </p>
@@ -174,13 +220,13 @@
                             </div>
                         </li>
                         <li class="card__item">
-                            <img class="card__img" src="images/Olga_Repina.jpg" alt="Ольга Рєпіна" width="270">
+                            <img class="card__img" sizes="100vw" src="images/Olga_Repina1600.jpg" alt="Ольга Рєпіна">
                             <div class="card__frame">
                                 <h3 class="card__name">Ольга Рєпіна</h3>
                                 <p class="card__text">Frontend Developer </p>
                                 <ul class="card__icons-list icons-list">
                                     <li class="icons-list__item">
-                                        <a class="icons-list__link"  href="">
+                                        <a class="icons-list__link" href="">
                                             <svg class="icons-list__svg" class="team_icon_item" width="20" height="20">
                                                 <use xlink:href="./images/icons.svg#instagram"></use>
                                             </svg>
@@ -211,7 +257,8 @@
                             </div>
                         </li>
                         <li class="card__item">
-                            <img class="card__img" src="images/Mikola_Tarasov.jpg" alt="Микола Тарасов" width="270">
+                            <img class="card__img" sizes="100vw" srcset="" src="images/Mikola_Tarasov1600.jpg"
+                                alt="Микола Тарасов">
                             <div class="card__frame">
                                 <h3 class="card__name">Микола Тарасов</h3>
                                 <p class="card__text">Marketing</p>
@@ -249,7 +296,8 @@
 
                         </li>
                         <li class="card__item">
-                            <img class="card__img" src="images/Mihail_Yermakov.jpg" alt="Михайло Єрмаков" width="270">
+                            <img class="card__img" sizes="100vw" src="images/Mihail_Yermakov1600.jpg"
+                                alt="Михайло Єрмаков">
                             <div class="card__frame">
                                 <h3 class="card__name">Михайло Єрмаков</h3>
                                 <p class="card__text">UI Designer</p>
@@ -405,7 +453,7 @@
     </footer>
 
 
-    <div class="modal is-hidden" data-modal>
+    <div class="modal" data-modal>
         <div class=" modal__window">
             <button class=" modal__close" type="button" data-modal-close>
                 <svg class="modal__svg" width="10" height="10">
@@ -454,6 +502,7 @@
         </div>
     </div>
     <script src="./js/modal.js"></script>
+    <script src="./js/mobile-nav.js"></script>
 
 </body>
 

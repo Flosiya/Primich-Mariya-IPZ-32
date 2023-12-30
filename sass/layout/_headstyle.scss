@@ -10,13 +10,15 @@
 }
 
 
+
 .logo {
     font-family: 'Raleway', sans-serif;
     font-weight: 700;
     font-size: 26px;
     letter-spacing: 0.78px;
-    color: $primary-color;  
+    color: $primary-color;
     margin-right: 90px;
+
     &__text--blue {
         font-family: 'Raleway', sans-serif;
         color: $accent-color;
@@ -80,6 +82,11 @@
         line-height: normal;
         letter-spacing: 0.28px;
     }
+
+    &__link--active:after {
+        opacity: 1;
+        transform: scaleX(1);
+    }
 }
 
 .contacts {
@@ -105,16 +112,85 @@
         display: inline-block;
     }
 
-    &__svg{
+    &__svg {
         transition: 300ms ease;
     }
 
-    &__link:hover, &__link:focus{
+    &__link:hover,
+    &__link:focus {
         color: $accent-color;
     }
 
     &__link:hover &__svg,
     &__link:focus &__svg {
         fill: $accent-color;
+    }
+}
+
+@media (max-width:992px) {
+    .contacts{
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 10px;
+        margin-left: auto;
+        &__link {
+            font-size: 12px;
+            text-align: center;
+            padding: 0;
+        }
+    }
+}
+
+@media (max-width:768px) {
+    .header {
+        height: 80px;
+
+        &__container {
+            display: flex;
+            justify-content: space-between;
+            max-width: 768px;
+        }
+    }
+
+    .logo {
+        font-size: 24px;
+        margin-right: 88px;
+
+        &__text--blue {
+            font-size: 24px;
+        }
+    }
+
+    .nav {
+        &__link {
+            font-family: Roboto;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+            letter-spacing: 0.28px;
+        }
+    }
+
+    .mobile__button {
+        visibility: visible;
+        display: flex;
+    }
+
+    .nav {
+        display: none;
+    }
+
+    .contacts {
+        display: none;
+    }
+
+    .logo {
+        font-size: 24px;
+
+        &__text--blue {
+            font-size: 24px;
+        }
     }
 }

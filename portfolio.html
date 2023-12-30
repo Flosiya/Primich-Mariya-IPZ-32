@@ -14,42 +14,87 @@
 
     <link rel="stylesheet" href="css/modern-normalize.css">
     <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="css/main.min.css">
+    <link rel="stylesheet" href="./css/main.min.css">
 </head>
 
 <body>
     <header class="header">
         <div class="header__container container">
             <a class="logo" href="index.html">
-                <span class=" logo__text--blue">Web</span>Studio
+                <span class="logo__text--blue">Web</span>Studio
             </a>
             <nav class="nav">
                 <ul class="nav__list">
                     <li class="nav__item">
-                        <a class=" nav__link " href="#">Студія</a>
+                        <a class="nav__link  " href="index.html">Студія</a>
                     </li>
                     <li class=" nav__item">
-                        <a class=" nav__link nav__link--active" href="portfolio.html">Портфоліо</a>
+                        <a class="nav__link nav__link--active" href="portfolio.html">Портфоліо</a>
                     </li>
-                    <li class=" nav__item">
-                        <a class=" nav__link" href="#">Контакти</a>
+                    <li class="nav__item">
+                        <a class="nav__link" href="#">Контакти</a>
                     </li>
                 </ul>
             </nav>
             <ul class=" contacts">
-                <li class=" contacts__item">
-                    <a class=" contacts__link" href="mailto:info@devstudio.com">
-                        <svg class=" contacts__svg" width="16" height="12">
+                <li class="contacts__item">
+                    <a class="contacts__link" href="mailto:info@devstudio.com">
+                        <svg class="svg contacts__svg" width="16" height="12">
                             <use href="./images/icons.svg#email"></use>
                         </svg>
                         info@devstudio.com</a>
                 </li>
-                <li class=" contacts__item">
-                    <a class=" contacts__link" href="tel:+380961111111">
-                        <svg class=" contacts__svg" width="10" height="16">
+                <li class="contact-link contacts__item">
+                    <a class="contact-item contacts__link" href="tel:+380961111111">
+                        <svg class="svg contacts__svg" width="10" height="16">
                             <use href="./images/icons.svg#phone"></use>
                         </svg>
                         +38 096 111 11 11</a>
+                </li>
+            </ul>
+            <button class="mobile__button" type="button" data-menu-button aria-expanded="false">
+                <svg class="mobile__svg" width="40" height="40">
+                    <use class="mobile__svg--open" href="./images/icons.svg#mobile_menu"></use>
+                    <use class="mobile__svg--close" xlink:href="./images/icons.svg#close_mobile"></use>
+                </svg>
+            </button>
+        </div>
+        <div class="mobile" data-menu>
+            <nav class="mobile-nav">
+                <ul class="mobile-nav__list">
+                    <li class="mobile-nav__item">
+                        <a class="mobile-nav__link  " href="index.html">Студія</a>
+                    </li>
+                    <li class=" mobile-nav__item">
+                        <a class="mobile-nav__link mobile-nav__link--active" href="portfolio.html">Портфоліо</a>
+                    </li>
+                    <li class="mobile-nav__item">
+                        <a class="mobile-nav__link" href="#">Контакти</a>
+                    </li>
+                </ul>
+            </nav>
+            <ul class="mobile-contacts">
+                <li class="mobile-contacts__item">
+                    <a class="mobile-contacts__link--number" href="tel:+380961111111">
+                        +38 096 111 11 11</a>
+                </li>
+                <li class="mobile-contacts__item">
+                    <a class="mobile-contacts__link" href="mailto:info@devstudio.com">
+                        info@devstudio.com</a>
+                </li>
+            </ul>
+            <ul class="mobile__network">
+                <li class="mobile__network-item">
+                    <a href="" class="mobile__network-link">Instagram</a>
+                </li>
+                <li class="mobile__network-item">
+                    <a href="" class="mobile__network-link">Twitter</a>
+                </li>
+                <li class="mobile__network-item">
+                    <a href="" class="mobile__network-link">Facebook</a>
+                </li>
+                <li class="mobile__network-item">
+                    <a href="" class="mobile__network-link">LinkedIn</a>
                 </li>
             </ul>
         </div>
@@ -60,28 +105,28 @@
             <div class="portfolio__container container">
                 <ul class="portfolio__list">
                     <li class="portfolio__item">
-                        <button class="portfolio__buttons portfolio__buttons--active" type="button"> Усі </button>
+                        <button class="portfolio__buttons portfolio__buttons active" type="button">Усі</button>
                     </li>
                     <li class="portfolio__item">
-                        <button class="portfolio-buttons portfolio__buttons" type="button"> Веб-сайти </button>
+                        <button class="portfolio-buttons portfolio__buttons" type="button">Веб-сайти</button>
                     </li>
                     <li class="portfolio__item">
-                        <button class="portfolio-buttons portfolio__buttons" type="button"> Додатки </button>
+                        <button class="portfolio-buttons portfolio__buttons" type="button">Додатки</button>
                     </li>
                     <li class="portfolio__item">
-                        <button class="portfolio-buttons portfolio__buttons" type="button"> Дизайн </button>
+                        <button class="portfolio-buttons portfolio__buttons" type="button">Дизайн</button>
                     </li>
                     <li class="portfolio__item">
-                        <button class="portfolio-buttons portfolio__buttons" type="button"> Маркетинг </button>
+                        <button class="portfolio-buttons portfolio__buttons" type="button">Маркетинг</button>
                     </li>
                 </ul>
 
-                <ul class=" portfolio__card-list card-list">
-                    <li class=" card-list__item" tabindex="0">
-                        <a class="card-list__link" href="#" tabindex="-1">
+                <ul class="portfolio__card-list card-list">
+                    <li class="card-list__item" tabindex="0">
+                        <a class="card-list__link" href="#" tabindex="1">
                             <div class="card-list__wrapper">
                                 <img class="card-list__img" src="images/pers_in_laptop.jpg" alt="person using laptop"
-                                    width="370">
+                                    >
                                 <div class="card-list__overlay overlay">
                                     <p class="overlay__text">
                                         Ресурс пропонує комплексні пропозиції з різним рівнем
@@ -96,9 +141,9 @@
                         </a>
                     </li>
                     <li class=" card-list__item" tabindex="0">
-                        <a class="card-list__link" href="#" tabindex="-1">
+                        <a class="card-list__link" href="#" tabindex="1">
                             <div class="card-list__wrapper">
-                                <img class="card-list__img" src="images/sportmen.jpg" alt="two sportmen playing" width="370">
+                                <img class="card-list__img" src="images/sportmen.jpg" alt="two sportmen playing" >
                                 <div class="card-list__overlay overlay">
                                     <p class="overlay__text">
                                         Ресурс пропонує комплексні пропозиції з різним рівнем
@@ -115,9 +160,9 @@
 
                     </li>
                     <li class="card-list__item" tabindex="0">
-                        <a class="card-list__link" href="#" tabindex="-1">
+                        <a class="card-list__link" href="#" tabindex="1">
                             <div class="card-list__wrapper">
-                                <img class="card-list__img" src="images/seafood.jpg" alt="restaurant seafood" width="370">
+                                <img class="card-list__img" src="images/seafood.jpg" alt="restaurant seafood" >
                                 <div class=" card-list__overlay overlay">
                                     <p class="overlay__text">Ресурс пропонує комплексні пропозиції з різним рівнем
                                         функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні
@@ -132,9 +177,9 @@
 
                     </li>
                     <li class=" card-list__item" tabindex="0">
-                        <a class="card-list__link" href="#" tabindex="-1">
+                        <a class="card-list__link" href="#" tabindex="1">
                             <div class="card-list__wrapper">
-                                <img class="card-list__img" src="images/headphone.jpg" alt="picture headphone" width="370">
+                                <img class="card-list__img" src="images/headphone.jpg" alt="picture headphone" >
                                 <div class=" card-list__overlay overlay">
                                     <p class="overlay__text">Ресурс пропонує комплексні пропозиції з різним рівнем
                                         функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні
@@ -149,9 +194,9 @@
                         </a>
                     </li>
                     <li class=" card-list__item" tabindex="0">
-                        <a class="card-list__link" href="#" tabindex="-1">
+                        <a class="card-list__link" href="#" tabindex="1">
                             <div class="card-list__wrapper">
-                                <img class="card-list__img" src="images/blocks.jpg" alt="project boxes" width="370">
+                                <img class="card-list__img" src="images/blocks.jpg" alt="project boxes" >
                                 <div class="card-list__overlay overlay">
                                     <p class="overlay__text">Ресурс пропонує комплексні пропозиції з різним рівнем
                                         функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні
@@ -166,9 +211,9 @@
                         </a>
                     </li>
                     <li class=" card-list__item" tabindex="0">
-                        <a class="card-list__link" href="#" tabindex="-1">
+                        <a class="card-list__link" href="#" tabindex="1">
                             <div class="card-list__wrapper">
-                                <img class="card-list__img" src="images/screen.jpg" alt="picture screen" width="370">
+                                <img class="card-list__img" src="images/screen.jpg" alt="picture screen" >
                                 <div class="card-list__overlay overlay">
                                     <p class="overlay__text">Ресурс пропонує комплексні пропозиції з різним рівнем
                                         функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні
@@ -183,9 +228,9 @@
                         </a>
                     </li>
                     <li class=" card-list__item" tabindex="0">
-                        <a class="card-list__link" href="#" tabindex="-1">
+                        <a class="card-list__link" href="#" tabindex="1">
                             <div class="card-list__wrapper">
-                                <img class="card-list__img" src="images/journey.jpg" alt="picture journey" width="370">
+                                <img class="card-list__img" src="images/journey.jpg" alt="picture journey" >
                                 <div class="card-list__overlay overlay">
                                     <p class="overlay__text">Ресурс пропонує комплексні пропозиції з різним рівнем
                                         функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні
@@ -200,9 +245,9 @@
                         </a>
                     </li>
                     <li class=" card-list__item" tabindex="0">
-                        <a class="card-list__link" href="#" tabindex="-1">
+                        <a class="card-list__link" href="#" tabindex="1">
                             <div class="card-list__wrapper">
-                                <img class="card-list__img" src="images/lab_el_tag.jpg" alt="project LAB" width="370">
+                                <img class="card-list__img" src="images/lab_el_tag.jpg" alt="project LAB" >
                                 <div class="card-list__overlay overlay">
                                     <p class="overlay__text">Ресурс пропонує комплексні пропозиції з різним рівнем
                                         функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні
@@ -217,9 +262,9 @@
                         </a>
                     </li>
                     <li class=" card-list__item" tabindex="0">
-                        <a class="card-list__link" href="#" tabindex="-1">
+                        <a class="card-list__link" href="#" tabindex="1">
                             <div class="card-list__wrapper">
-                                <img class="card-list__img" src="images/laptop.jpg" alt="picture laptop" width="370">
+                                <img class="card-list__img" src="images/laptop.jpg" alt="picture laptop" >
                                 <div class="card-list__overlay overlay">
                                     <p class="overlay__text">Ресурс пропонує комплексні пропозиції з різним рівнем
                                         функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні
@@ -229,7 +274,7 @@
                             </div>
                             <div class=" card-list__desk">
                                 <h3 class="card-list__title">Growing Business</h3>
-                                <p class="tab-type card-list__text">Додаток</p>
+                                <p class="card-list__text">Додаток</p>
                             </div>
                         </a>
                     </li>
@@ -298,6 +343,8 @@
             </div>
         </div>
     </footer>
+    <script src="./js/filter.js"></script>
+    <script src="./js/mobile-nav.js"></script>
 </body>
 
 </html>

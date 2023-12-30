@@ -36,7 +36,7 @@ img {
     display: block;
 }
 
-.button{
+.button {
     cursor: pointer;
     border-radius: 4px;
     background: $accent-color;
@@ -45,4 +45,10 @@ img {
 
     letter-spacing: 0.96px;
     border: none;
+}
+
+img {
+    display: block;
+    width: 100%;
+    height: auto;
 }
